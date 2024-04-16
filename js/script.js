@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     let stres = 0;
     let anksioznost = 0;
