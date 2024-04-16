@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="color-scheme" content="dark"/>
+    <title>Preview • Pico CSS</title>
+    <meta name="description" content="A pure HTML example, without dependencies."/>
+    <!-- Pico.css -->
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<!-- Header -->
+<header class="container">
+    <hgroup id="NaslovAnketa">
+        <h1>Ocijenite svoje mentalno zdravlje </h1>
+        <p>Briga o mentalnom zdravlju je ključna za osobni i profesionalni uspjeh.</p>
+    </hgroup>
+</header>
+
+<main class="container">
+
+    <div id="Anketa">
+        <!-- Preview -->
+        <h2>Označite u kojoj mjeri se pojedina tvrdnja odnosila na Vas u zadnjih tjedan dana.</h2>
+        <p>
+            Nema netočnih odgovora. Nemojte predugo razmišljati o tvrdnjama.
+        </p>
+        <br>
+        <div>
+            <span>0  - uopće se nije odnosilo na mene</span>
+        </div>
+        <div>
+            <span>1 – odnosilo se na mene u određenoj mjeri ili neko vrijeme</span>
+        </div>
+        <div>
+            <span>2 – odnosilo se na mene u većoj mjeri ili dobar dio vremena</span>
+        </div>
+
+        <div>
+            <span>3 – gotovo u potpunosti ili većinu vremena se odnosilo na mene</span>
+        </div>
+        <br>
+
+
+        <div Type style="margin:10px">
+            <h4>Bilo mi je teško smiriti se.</h4>
+            <div>
+                <button class="rating-btnStres" data-value="0">0</button>
+                <button class="rating-btnStres" data-value="1">1</button>
+                <button class="rating-btnStres" data-value="2">2</button>
+                <button class="rating-btnStres" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+        <div Type style="margin:10px">
+            <h4>Sušila su mi se usta.</h4>
+            <div>
+                <button class="rating-btnAnskioznost" data-value="0">0</button>
+                <button class="rating-btnAnskioznost" data-value="1">1</button>
+                <button class="rating-btnAnskioznost" data-value="2">2</button>
+                <button class="rating-btnAnskioznost" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+
+
+        <div Type style="margin:10px">
+            <h4>Uopće nisam mogao/la doživjeti neki pozitivan osjećaj.</h4>
+            <div>
+                <button class="rating-btnDepresija" data-value="0">0</button>
+                <button class="rating-btnDepresija" data-value="1">1</button>
+                <button class="rating-btnDepresija" data-value="2">2</button>
+                <button class="rating-btnDepresija" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+
+        <div Type style="margin:10px">
+            <h4>Doživio/la sam teškoće s disanjem (npr. ubrzano disanje, gubitak daha bez fizičkog napora).</h4>
+            <div>
+                <button class="rating-btnAnskioznost" data-value="0">0</button>
+                <button class="rating-btnAnskioznost" data-value="1">1</button>
+                <button class="rating-btnAnskioznost" data-value="2">2</button>
+                <button class="rating-btnAnskioznost" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+
+        <div Type style="margin:10px">
+            <h4>Bilo mi je teško započeti aktivnosti.</h4>
+            <div>
+                <button class="rating-btnDepresija" data-value="0">0</button>
+                <button class="rating-btnDepresija" data-value="1">1</button>
+                <button class="rating-btnDepresija" data-value="2">2</button>
+                <button class="rating-btnDepresija" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+
+        <div Type style="margin:10px">
+            <h4>Bio/la sam sklon/a pretjeranim reakcijama na događaje.</h4>
+            <div>
+                <button class="rating-btnStres" data-value="0">0</button>
+                <button class="rating-btnStres" data-value="1">1</button>
+                <button class="rating-btnStres" data-value="2">2</button>
+                <button class="rating-btnStres" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+
+
+        <div Type style="margin:10px">
+            <h4>Doživljavao/la sam drhtanje (npr. u rukama).</h4>
+            <div>
+                <button class="rating-btnAnskioznost" data-value="0">0</button>
+                <button class="rating-btnAnskioznost" data-value="1">1</button>
+                <button class="rating-btnAnskioznost" data-value="2">2</button>
+                <button class="rating-btnAnskioznost" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+        <div Type style="margin:10px">
+            <h4>Osjećao/la sam se jako nervozno.</h4>
+            <div>
+                <button class="rating-btnStres" data-value="0">0</button>
+                <button class="rating-btnStres" data-value="1">1</button>
+                <button class="rating-btnStres" data-value="2">2</button>
+                <button class="rating-btnStres" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+
+        <div Type style="margin:10px">
+            <h4>Zabrinjavale su me situacije u kojima bih mogao/la paničariti i osramotiti se.</h4>
+            <div>
+                <button class="rating-btnAnskioznost" data-value="0">0</button>
+                <button class="rating-btnAnskioznost" data-value="1">1</button>
+                <button class="rating-btnAnskioznost" data-value="2">2</button>
+                <button class="rating-btnAnskioznost" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+        <div Type style="margin:10px">
+            <h4>Osjetio/la sam kao da se nemam čemu radovati.</h4>
+            <div>
+                <button class="rating-btnDepresija" data-value="0">0</button>
+                <button class="rating-btnDepresija" data-value="1">1</button>
+                <button class="rating-btnDepresija" data-value="2">2</button>
+                <button class="rating-btnDepresija" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+
+        <div Type style="margin:10px">
+            <h4>Osjetio/la sam da postajem uznemiren/a.</h4>
+            <div>
+                <button class="rating-btnStres" data-value="0">0</button>
+                <button class="rating-btnStres" data-value="1">1</button>
+                <button class="rating-btnStres" data-value="2">2</button>
+                <button class="rating-btnStres" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+
+
+        <div Type style="margin:10px">
+            <h4>Bilo mi je teško opustiti se.</h4>
+            <div>
+                <button class="rating-btnStres" data-value="0">0</button>
+                <button class="rating-btnStres" data-value="1">1</button>
+                <button class="rating-btnStres" data-value="2">2</button>
+                <button class="rating-btnStres" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+
+        <div Type style="margin:10px">
+            <h4>Bio/la sam potišten/a i tužan/na.</h4>
+            <div>
+                <button class="rating-btnDepresija" data-value="0">0</button>
+                <button class="rating-btnDepresija" data-value="1">1</button>
+                <button class="rating-btnDepresija" data-value="2">2</button>
+                <button class="rating-btnDepresija" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+
+
+        <div Type style="margin:10px">
+            <h4>1Nisam podnosio/la da me išta ometa u onome što sam radio/la.</h4>
+            <div>
+                <button class="rating-btnStres" data-value="0">0</button>
+                <button class="rating-btnStres" data-value="1">1</button>
+                <button class="rating-btnStres" data-value="2">2</button>
+                <button class="rating-btnStres" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+
+        <div Type style="margin:10px">
+            <h4>Osjetio/la sam da sam blizu panici.</h4>
+            <div>
+                <button class="rating-btnAnskioznost" data-value="0">0</button>
+                <button class="rating-btnAnskioznost" data-value="1">1</button>
+                <button class="rating-btnAnskioznost" data-value="2">2</button>
+                <button class="rating-btnAnskioznost" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+
+
+        <div Type style="margin:10px">
+            <h4>Ništa me nije moglo oduševiti</h4>
+            <div>
+                <button class="rating-btnDepresija" data-value="0">0</button>
+                <button class="rating-btnDepresija" data-value="1">1</button>
+                <button class="rating-btnDepresija" data-value="2">2</button>
+                <button class="rating-btnDepresija" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+
+
+        <div Type style="margin:10px">
+            <h4>Osjetio/la sam da ne vrijedim mnogo kao osoba.</h4>
+            <div>
+                <button class="rating-btnDepresija" data-value="0">0</button>
+                <button class="rating-btnDepresija" data-value="1">1</button>
+                <button class="rating-btnDepresija" data-value="2">2</button>
+                <button class="rating-btnDepresija" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+
+
+        <div Type style="margin:10px">
+            <h4>Događalo mi se da sam bio/la prilično osjetljiv/a.</h4>
+            <div>
+                <button class="rating-btnStres" data-value="0">0</button>
+                <button class="rating-btnStres" data-value="1">1</button>
+                <button class="rating-btnStres" data-value="2">2</button>
+                <button class="rating-btnStres" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+
+        <div Type style="margin:10px">
+            <h4>Bio/la sam svjestan/na rada svog srca bez fizičkog napora (npr. osjećaj preskakanja i ubrzanog rada
+                srca).</h4>
+            <div>
+                <button class="rating-btnAnskioznost" data-value="0">0</button>
+                <button class="rating-btnAnskioznost" data-value="1">1</button>
+                <button class="rating-btnAnskioznost" data-value="2">2</button>
+                <button class="rating-btnAnskioznost" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+        <div Type style="margin:10px">
+            <h4>Bio/la sam uplašen/a bez opravdanog razloga.</h4>
+            <div>
+                <button class="rating-btnAnskioznost" data-value="0">0</button>
+                <button class="rating-btnAnskioznost" data-value="1">1</button>
+                <button class="rating-btnAnskioznost" data-value="2">2</button>
+                <button class="rating-btnAnskioznost" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+        <div Type style="margin:10px">
+            <h4>Osjetio/la sam da život nema smisla.</h4>
+            <div>
+                <button class="rating-btnDepresija" data-value="0">0</button>
+                <button class="rating-btnDepresija" data-value="1">1</button>
+                <button class="rating-btnDepresija" data-value="2">2</button>
+                <button class="rating-btnDepresija" data-value="3">3</button>
+            </div>
+            <br>
+        </div>
+
+
+        <div>
+        </div>
+        <div hidden="">
+            <span>Stres</span>
+            <span id="myText">Suma</span>
+        </div>
+        <div hidden>
+            <span>Anksiozsnost</span>
+            <span id="myAnksioyznostText">Suma</span>
+        </div>
+        <div hidden>
+            <span>Depresija</span>
+            <span id="myDepresijaText">Suma</span>
+        </div>
+        <br>
+        <form method="POST" id="form">
+            <input type="hidden" name="access_key" value="752709de-fdd0-4f91-9d49-e15f51dedd97">
+            <input type="hidden" name="subject" value="Netko je ispunio anketu Mentalno zdravlje">
+            <!-- Custom Form Data -->
+            <textarea hidden="hidden" name="message" id="poruka" required></textarea>
+            <button type="submit" id="SubmitButton" disabled>Rezultati</button>
+            <div Type style="margin-top: -15px">
+                <div>
+                    <span id="potrebnoodgovoriti"></span>
+                </div>
+                <span>Odgovoreno</span>
+                <span id="odgovorenoText">0</span>
+                <span> / 21</span>
+            </div>
+            <div id="result"></div>
+        </form>
+        <!-- Required for hCaptcha -->
+    </div>
+    <br>
+    <div id="Rezultati" hidden="">
+        <H4> Depresija </H4>
+        <progress id="DepraBar" value="10" max="21"></progress>
+        <p id="DepresijaResults">Rezultati depresije Here</p>
+        <H4> Anksioznost </H4>
+        <progress id="AnksBar" value="10" max="21"></progress>
+
+        <p id="AnksioznostResults">Rezultat depra </p>
+        <H4> Stres </H4>
+        <progress id="StresBar" value="10" max="21"></progress>
+        <p id="StresResults">Rezultati stress </p>
+    </div>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
