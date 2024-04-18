@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById("SubmitButton").removeAttribute("disabled", "");
         }
 
-        let stresFinal = document.getElementById("myText").innerHTML;
-        let anksFinal = document.getElementById("myAnksioyznostText").innerHTML;
-        let depraFinal = document.getElementById("myDepresijaText").innerHTML;
+        let stresFinal = document.getElementById("myText").innerHTML * 2 ;
+        let anksFinal = document.getElementById("myAnksioyznostText").innerHTML * 2 ;
+        let depraFinal = document.getElementById("myDepresijaText").innerHTML * 2;
 
         document.getElementById("poruka").innerHTML = "Stres: " + stresFinal + "   Anksioznost: " + anksFinal + "   Depresija: " + depraFinal;
 
