@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
     let DepresijaOpisKraj = "";
     let AnksioznostOpisKraj = "";
     let StresOpisKraj = "";
+    let DepresijaOpisTitle = "";
+    let AnksioznostOpisTitle = "";
+    let StresOpisTitle = "";
     const ratingButtonsStres = document.querySelectorAll('.rating-btnStres');
     const ratingButtonsAnksioznost = document.querySelectorAll('.rating-btnAnskioznost');
     const ratingButtonsDepresija = document.querySelectorAll('.rating-btnDepresija');
@@ -50,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         if (anksFinal <= 7)
-            AnksioznostOpisKraj = "Bez značajnih smetnji";
+            AnksioznostOpisKraj = "";
         else if (anksFinal <= 9)
             AnksioznostOpisKraj = "Doživljavate blage simptome nervoze ili zabrinutosti, ali oni ne utječu značajno na vašu sposobnost obavljanja svakodnevnih aktivnosti. Preporučuje se da prakticirate tehnike opuštanja poput dubokog disanja, meditacije ili joge kako biste smanjili osjećaj nervoze. Osim toga, pokušajte identificirati situacije koje izazivaju anksioznost i razmislite o strategijama za suočavanje s njima.";
         else if (anksFinal <= 14)
@@ -62,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         if (stresFinal <= 14)
-            StresOpisKraj = "Bez značajnih smetnji";
+            StresOpisKraj = "";
         else if (stresFinal <= 18)
             StresOpisKraj = "Primjećujete blagu razinu stresa, ali on ne uzrokuje značajne poteškoće u vašem svakodnevnom funkcioniranju. Pokušajte identificirati izvore stresa u svom životu i razmislite o načinima kako ih smanjiti. Postavljanje prioriteta, delegiranje zadataka i prakticiranje tehnika za upravljanje stresom mogu vam pomoći da se osjećate bolje.";
         else if (stresFinal <= 25)
@@ -73,13 +76,50 @@ document.addEventListener('DOMContentLoaded', function () {
             StresOpisKraj = "Primjećujete izrazito visoku razinu stresa koja može imati ozbiljne posljedice na vaše mentalno i fizičko zdravlje te na vaše međuljudske odnose. Odmah potražite hitnu stručnu pomoć i podršku od terapeuta, psihijatra ili liječnika opće prakse. Ovo je kritično vrijeme za primanje odgovarajućeg tretmana koji će vam pomoći u upravljanju teškim emocionalnim izazovima i sprječavanju daljnjih komplikacija.";
 
 
+        if (depraFinal <= 9)
+            DepresijaOpisTitle = "";
+        else if (depraFinal <= 13)
+            DepresijaOpisTitle = "Blage smetnje";
+        else if (depraFinal <= 20)
+            DepresijaOpisTitle = "Umjerene smetnje";
+        else if (depraFinal <= 27)
+            DepresijaOpisTitle = "Ozbiljne smetnje";
+        else if (depraFinal >= 28)
+            DepresijaOpisTitle = "Izrazito ozbiljne smetnje";
+
+
+        if (anksFinal <= 7)
+            AnksioznostOpisTitle= "Bez značajnih smetnji";
+        else if (anksFinal <= 9)
+            AnksioznostOpisTitle = "Blage smetnje";
+        else if (anksFinal <= 14)
+            AnksioznostOpisTitle = "Umjerene smetnje";
+        else if (anksFinal <= 19)
+            AnksioznostOpisTitle = "Ozbiljne smetnje";
+        else if (anksFinal >= 20)
+            AnksioznostOpisTitle = "Izrazito ozbiljne smetnje";
+
+
+        if (stresFinal <= 14)
+            StresOpisTitle= "Bez značajnih smetnji";
+        else if (stresFinal <= 18)
+            StresOpisTitle = "Blage smetnje";
+        else if (stresFinal <= 25)
+            StresOpisTitle = "Umjerene smetnje";
+        else if (stresFinal <= 33)
+            StresOpisTitle = "Ozbiljne smetnje";
+        else if (stresFinal >= 34)
+            StresOpisTitle = "Izrazito ozbiljne smetnje";
+
         document.getElementById("DepresijaResults").innerHTML = DepresijaOpisKraj;
         document.getElementById("AnksioznostResults").innerHTML = AnksioznostOpisKraj;
         document.getElementById("StresResults").innerHTML = StresOpisKraj;
 
-        document.getElementById("StresBar").value = stresFinal;
-        document.getElementById("AnksBar").value = anksFinal;
-        document.getElementById("DepraBar").value = depraFinal;
+        document.getElementById("DepresijaTitle").innerHTML = DepresijaOpisTitle;
+        document.getElementById("StresTitle").innerHTML = StresOpisTitle;
+        document.getElementById("AnksioznostTitle").innerHTML = AnksioznostOpisTitle;
+
+
 
 
     }
