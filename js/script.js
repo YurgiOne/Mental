@@ -41,37 +41,38 @@ document.addEventListener('DOMContentLoaded', function () {
         if (depraFinal <= 9)
             DepresijaOpisKraj = "Bez značajnih smetnji";
         else if (depraFinal <= 13)
-            DepresijaOpisKraj = "Blage smetnje";
+            DepresijaOpisKraj = "Osjećate blagu tugu ili gubitak interesa, ali ti simptomi ne ometaju značajno vaš svakodnevni život. Preporučuje se da obratite pažnju na svoje emocionalno stanje i pokušate aktivno raditi na poboljšanju raspoloženja. Razmislite o aktivnostima koje vas ispunjavaju i pomažu vam da se osjećate bolje, poput vježbanja, druženja s prijateljima ili hobija koji vas veseli.";
         else if (depraFinal <= 20)
-            DepresijaOpisKraj = "Umjerene smetnje";
+            DepresijaOpisKraj = "Postoji umjeren osjećaj tuge, gubitka interesa ili zadovoljstva u aktivnostima, što može rezultirati poteškoćama u obavljanju svakodnevnih aktivnosti. Preporučuje se da potražite podršku od bliskih osoba ili stručnjaka za mentalno zdravlje. Razgovor s terapeutom ili psihijatrom može vam pomoći da razumijete uzroke vaših simptoma i naučite tehnike za upravljanje depresijom.";
         else if (depraFinal <= 27)
-            DepresijaOpisKraj = "Ozbiljne smetnje";
+            DepresijaOpisKraj = "Izraženi osjećaji tuge, beznađa i gubitka interesa mogu značajno ometati svakodnevno funkcioniranje i mogu biti povezani s suicidalnim mislima ili ponašanjem. Važno je da odmah potražite stručnu pomoć od terapeuta, psihijatra ili liječnika opće prakse. Depresija teške ozbiljnosti može zahtijevati terapiju ili medicinsku intervenciju kako bi se adekvatno tretirala i spriječila moguća pogoršanja";
         else if (depraFinal >= 28)
-            DepresijaOpisKraj = "Izrazito ozbiljne smetnje";
+            DepresijaOpisKraj = "Osjećate ekstremne simptome tuge, beznađa i gubitka interesa koji mogu dovesti do značajnih poteškoća u obavljanju svakodnevnih aktivnosti i mogu biti povezani s suicidalnim mislima ili ponašanjem. Odmah potražite hitnu stručnu pomoć i podršku od terapeuta, psihijatra ili liječnika opće prakse. Ovo je kritično vrijeme za primanje odgovarajućeg tretmana koji će vam pomoći u upravljanju teškim emocionalnim izazovima i sprječavanju daljnjih komplikacija.";
 
 
         if (anksFinal <= 7)
             AnksioznostOpisKraj= "Bez značajnih smetnji";
         else if (anksFinal <= 9)
-            AnksioznostOpisKraj = "Blage smetnje";
+            AnksioznostOpisKraj = "Osjećate blagu tugu ili gubitak interesa, ali ti simptomi ne ometaju značajno vaš svakodnevni život. Preporučuje se da obratite pažnju na svoje emocionalno stanje i pokušate aktivno raditi na poboljšanju raspoloženja. Razmislite o aktivnostima koje vas ispunjavaju i pomažu vam da se osjećate bolje, poput vježbanja, druženja s prijateljima ili hobija koji vas veseli. Doživljavate blage simptome nervoze ili zabrinutosti, ali oni ne utječu značajno na vašu sposobnost obavljanja svakodnevnih aktivnosti. Preporučuje se da prakticirate tehnike opuštanja poput dubokog disanja, meditacije ili joge kako biste smanjili osjećaj nervoze. Osim toga, pokušajte identificirati situacije koje izazivaju anksioznost i razmislite o strategijama za suočavanje s njima.\tPrimjećujete blagu razinu stresa, ali on ne uzrokuje značajne poteškoće u vašem svakodnevnom funkcioniranju.\n" +
+                "Pokušajte identificirati izvore stresa u svom životu i razmislite o načinima kako ih smanjiti. Postavljanje prioriteta, delegiranje zadataka i prakticiranje tehnika za upravljanje stresom mogu vam pomoći da se osjećate bolje.";
         else if (anksFinal <= 14)
-            AnksioznostOpisKraj = "Umjerene smetnje";
+            AnksioznostOpisKraj = "Doživljavate umjerene simptome nervoze ili zabrinutosti koji mogu utjecati na vaše ponašanje i kvalitetu života. Potražite podršku od bliskih osoba i razgovarajte o svojim osjećajima. Također, razmislite o strukturiranoj terapiji kao što je kognitivno-bihevioralna terapija (CBT) koja je dokazano učinkovita u upravljanju anksioznošću.";
         else if (anksFinal <= 19)
-            AnksioznostOpisKraj = "Ozbiljne smetnje";
+            AnksioznostOpisKraj = "Ozbiljne smetnje Izraženi osjećaji tuge, beznađa i gubitka interesa mogu značajno ometati svakodnevno funkcioniranje i mogu biti povezani s suicidalnim mislima ili ponašanjem. Važno je da odmah potražite stručnu pomoć od terapeuta, psihijatra ili liječnika opće prakse. Depresija teške ozbiljnosti može zahtijevati terapiju ili medicinsku intervenciju kako bi se adekvatno tretirala i spriječila moguća pogoršanja. Doživljavate izražene simptome nervoze, napetosti ili zabrinutosti koji ometaju vaše svakodnevne aktivnosti i međuljudske odnose. Važno je da se obratite stručnjaku za mentalno zdravlje što je prije moguće kako biste dobili odgovarajuću podršku i tretman. Terapeut ili psihijatar mogu vam preporučiti terapiju, lijekove ili druge intervencije koje će vam pomoći u suočavanju s teškom anksioznošću.\tIzraženi osjećaj stresa koji značajno ometa svakodnevno funkcioniranje i može biti povezan s emocionalnim iscrpljenjem ili poteškoćama u kontroliranju emocija. Ako se osjećate preopterećeno stresom, važno je da potražite pomoć stručnjaka za mentalno zdravlje. Terapeut vam može pomoći u identifikaciji uzroka stresa i pružiti vam strategije za suočavanje s njim.";
         else if (anksFinal >= 20)
-            AnksioznostOpisKraj = "Izrazito ozbiljne smetnje";
+            AnksioznostOpisKraj = "Doživljavate izrazene simptome nervoze, panike ili straha koji dramatično ometaju vašu sposobnost funkcioniranja i mogu dovesti do izbjegavanja određenih situacija. Odmah potražite hitnu stručnu pomoć i podršku od terapeuta, psihijatra ili liječnika opće prakse. Ovo je kritično vrijeme za primanje odgovarajućeg tretmana koji će vam pomoći u upravljanju teškim emocionalnim izazovima i sprječavanju daljnjih komplikacija.";
 
 
         if (stresFinal <= 14)
             StresOpisKraj= "Bez značajnih smetnji";
         else if (stresFinal <= 18)
-            StresOpisKraj = "Blage smetnje";
+            StresOpisKraj = "Primjećujete blagu razinu stresa, ali on ne uzrokuje značajne poteškoće u vašem svakodnevnom funkcioniranju. Pokušajte identificirati izvore stresa u svom životu i razmislite o načinima kako ih smanjiti. Postavljanje prioriteta, delegiranje zadataka i prakticiranje tehnika za upravljanje stresom mogu vam pomoći da se osjećate bolje.";
         else if (stresFinal <= 25)
-            StresOpisKraj = "Umjerene smetnje";
+            StresOpisKraj = "Postoji umjeren osjećaj stresa koji može ometati obavljanje svakodnevnih aktivnosti, uzrokovati poteškoće u koncentraciji i izvršavanju zadataka i izazvati fizičke simptome kao što su glavobolja ili poremećaji spavanja. Razmislite o promjenama u načinu života koje bi vam mogle pomoći da smanjite stres, poput uspostavljanja bolje ravnoteže između posla i slobodnog vremena ili traženja podrške od obitelji i prijatelja.";
         else if (stresFinal <= 33)
-            StresOpisKraj = "Ozbiljne smetnje";
+            StresOpisKraj = "Izraženi osjećaj stresa koji značajno ometa svakodnevno funkcioniranje i može biti povezan s emocionalnim iscrpljenjem ili poteškoćama u kontroliranju emocija. Ako se osjećate preopterećeno stresom, važno je da potražite pomoć stručnjaka za mentalno zdravlje. Terapeut vam može pomoći u identifikaciji uzroka stresa i pružiti vam strategije za suočavanje s njim.";
         else if (stresFinal >= 34)
-            StresOpisKraj = "Izrazito ozbiljne smetnje";
+            StresOpisKraj = "Primjećujete izrazito visoku razinu stresa koja može imati ozbiljne posljedice na vaše mentalno i fizičko zdravlje te na vaše međuljudske odnose. Odmah potražite hitnu stručnu pomoć i podršku od terapeuta, psihijatra ili liječnika opće prakse. Ovo je kritično vrijeme za primanje odgovarajućeg tretmana koji će vam pomoći u upravljanju teškim emocionalnim izazovima i sprječavanju daljnjih komplikacija.";
 
 
         document.getElementById("DepresijaResults").innerHTML = DepresijaOpisKraj;
