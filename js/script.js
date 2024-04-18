@@ -1,10 +1,9 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     let stres = 0;
     let anksioznost = 0;
     let depresija = 0;
     let odabranih = 0;
-    let DepresijaOpisKraj= "";
+    let DepresijaOpisKraj = "";
     let AnksioznostOpisKraj = "";
     let StresOpisKraj = "";
     const ratingButtonsStres = document.querySelectorAll('.rating-btnStres');
@@ -32,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById("SubmitButton").removeAttribute("disabled", "");
         }
 
-        let stresFinal = document.getElementById("myText").innerHTML * 2 ;
-        let anksFinal = document.getElementById("myAnksioyznostText").innerHTML * 2 ;
+        let stresFinal = document.getElementById("myText").innerHTML * 2;
+        let anksFinal = document.getElementById("myAnksioyznostText").innerHTML * 2;
         let depraFinal = document.getElementById("myDepresijaText").innerHTML * 2;
 
         document.getElementById("poruka").innerHTML = "Stres: " + stresFinal + "   Anksioznost: " + anksFinal + "   Depresija: " + depraFinal;
@@ -51,20 +50,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         if (anksFinal <= 7)
-            AnksioznostOpisKraj= "Bez značajnih smetnji";
+            AnksioznostOpisKraj = "Bez značajnih smetnji";
         else if (anksFinal <= 9)
-            AnksioznostOpisKraj = "Osjećate blagu tugu ili gubitak interesa, ali ti simptomi ne ometaju značajno vaš svakodnevni život. Preporučuje se da obratite pažnju na svoje emocionalno stanje i pokušate aktivno raditi na poboljšanju raspoloženja. Razmislite o aktivnostima koje vas ispunjavaju i pomažu vam da se osjećate bolje, poput vježbanja, druženja s prijateljima ili hobija koji vas veseli. Doživljavate blage simptome nervoze ili zabrinutosti, ali oni ne utječu značajno na vašu sposobnost obavljanja svakodnevnih aktivnosti. Preporučuje se da prakticirate tehnike opuštanja poput dubokog disanja, meditacije ili joge kako biste smanjili osjećaj nervoze. Osim toga, pokušajte identificirati situacije koje izazivaju anksioznost i razmislite o strategijama za suočavanje s njima.\tPrimjećujete blagu razinu stresa, ali on ne uzrokuje značajne poteškoće u vašem svakodnevnom funkcioniranju.\n" +
-                "Pokušajte identificirati izvore stresa u svom životu i razmislite o načinima kako ih smanjiti. Postavljanje prioriteta, delegiranje zadataka i prakticiranje tehnika za upravljanje stresom mogu vam pomoći da se osjećate bolje.";
+            AnksioznostOpisKraj = "Doživljavate blage simptome nervoze ili zabrinutosti, ali oni ne utječu značajno na vašu sposobnost obavljanja svakodnevnih aktivnosti. Preporučuje se da prakticirate tehnike opuštanja poput dubokog disanja, meditacije ili joge kako biste smanjili osjećaj nervoze. Osim toga, pokušajte identificirati situacije koje izazivaju anksioznost i razmislite o strategijama za suočavanje s njima.";
         else if (anksFinal <= 14)
             AnksioznostOpisKraj = "Doživljavate umjerene simptome nervoze ili zabrinutosti koji mogu utjecati na vaše ponašanje i kvalitetu života. Potražite podršku od bliskih osoba i razgovarajte o svojim osjećajima. Također, razmislite o strukturiranoj terapiji kao što je kognitivno-bihevioralna terapija (CBT) koja je dokazano učinkovita u upravljanju anksioznošću.";
         else if (anksFinal <= 19)
-            AnksioznostOpisKraj = "Ozbiljne smetnje Izraženi osjećaji tuge, beznađa i gubitka interesa mogu značajno ometati svakodnevno funkcioniranje i mogu biti povezani s suicidalnim mislima ili ponašanjem. Važno je da odmah potražite stručnu pomoć od terapeuta, psihijatra ili liječnika opće prakse. Depresija teške ozbiljnosti može zahtijevati terapiju ili medicinsku intervenciju kako bi se adekvatno tretirala i spriječila moguća pogoršanja. Doživljavate izražene simptome nervoze, napetosti ili zabrinutosti koji ometaju vaše svakodnevne aktivnosti i međuljudske odnose. Važno je da se obratite stručnjaku za mentalno zdravlje što je prije moguće kako biste dobili odgovarajuću podršku i tretman. Terapeut ili psihijatar mogu vam preporučiti terapiju, lijekove ili druge intervencije koje će vam pomoći u suočavanju s teškom anksioznošću.\tIzraženi osjećaj stresa koji značajno ometa svakodnevno funkcioniranje i može biti povezan s emocionalnim iscrpljenjem ili poteškoćama u kontroliranju emocija. Ako se osjećate preopterećeno stresom, važno je da potražite pomoć stručnjaka za mentalno zdravlje. Terapeut vam može pomoći u identifikaciji uzroka stresa i pružiti vam strategije za suočavanje s njim.";
+            AnksioznostOpisKraj = "Ozbiljne smetnje Izraženi osjećaji tuge, beznađa i gubitka interesa mogu značajno ometati svakodnevno funkcioniranje i mogu biti povezani s suicidalnim mislima ili ponašanjem. Važno je da odmah potražite stručnu pomoć od terapeuta, psihijatra ili liječnika opće prakse. Depresija teške ozbiljnosti može zahtijevati terapiju ili medicinsku intervenciju kako bi se adekvatno tretirala i spriječila moguća pogoršanja. Doživljavate izražene simptome nervoze, napetosti ili zabrinutosti koji ometaju vaše svakodnevne aktivnosti i međuljudske odnose. Važno je da se obratite stručnjaku za mentalno zdravlje što je prije moguće kako biste dobili odgovarajuću podršku i tretman. Terapeut ili psihijatar mogu vam preporučiti terapiju, lijekove ili druge intervencije koje će vam pomoći u suočavanju s teškom anksioznošću. Izraženi osjećaj stresa koji značajno ometa svakodnevno funkcioniranje i može biti povezan s emocionalnim iscrpljenjem ili poteškoćama u kontroliranju emocija. Ako se osjećate preopterećeno stresom, važno je da potražite pomoć stručnjaka za mentalno zdravlje. Terapeut vam može pomoći u identifikaciji uzroka stresa i pružiti vam strategije za suočavanje s njim.";
         else if (anksFinal >= 20)
             AnksioznostOpisKraj = "Doživljavate izrazene simptome nervoze, panike ili straha koji dramatično ometaju vašu sposobnost funkcioniranja i mogu dovesti do izbjegavanja određenih situacija. Odmah potražite hitnu stručnu pomoć i podršku od terapeuta, psihijatra ili liječnika opće prakse. Ovo je kritično vrijeme za primanje odgovarajućeg tretmana koji će vam pomoći u upravljanju teškim emocionalnim izazovima i sprječavanju daljnjih komplikacija.";
 
 
         if (stresFinal <= 14)
-            StresOpisKraj= "Bez značajnih smetnji";
+            StresOpisKraj = "Bez značajnih smetnji";
         else if (stresFinal <= 18)
             StresOpisKraj = "Primjećujete blagu razinu stresa, ali on ne uzrokuje značajne poteškoće u vašem svakodnevnom funkcioniranju. Pokušajte identificirati izvore stresa u svom životu i razmislite o načinima kako ih smanjiti. Postavljanje prioriteta, delegiranje zadataka i prakticiranje tehnika za upravljanje stresom mogu vam pomoći da se osjećate bolje.";
         else if (stresFinal <= 25)
@@ -209,8 +207,6 @@ form.addEventListener('submit', function (e) {
             document.getElementById("Anketa").setAttribute("hidden", "");
             document.getElementById("NaslovAnketa").setAttribute("hidden", "");
             document.getElementById("Rezultati").removeAttribute("hidden", "");
-
-
 
 
         })
