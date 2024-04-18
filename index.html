@@ -18,13 +18,22 @@
 <!-- Header -->
 <header class="container">
     <hgroup id="NaslovAnketa">
-        <h1>Ocijenite svoje mentalno zdravlje </h1>
-        <p>Briga o mentalnom zdravlju je ključna za osobni i profesionalni uspjeh.</p>
+        <h1>DASS 21</h1>
+        <p>Pred Vama je upitnik koji ispituje prisutnost depresivnih i anksioznih simptoma te simptoma stresa. Upitnik
+            sadrži neke od uobičajenih teškoća i može Vam pomoći da identificirate kako se osjećate, ali on nije
+            dijagnostičko sredstvo, tj. visok rezultat na nekoj od skala ne ukazuje nužno na postojanje nekog psihičkog
+            poremećaja. Svatko povremeno doživljava ove simptome, tako da je rezultat na ovom upitniku samo odraz Vašeg
+            trenutnog stanja.</p>
+        <br>
+        <p>
+            Nakon što završite s ispunjavanjem upitnika, prikazat će Vam se rezultati na sve tri dimenzije, uz općeniti
+            opis teškoća. Ovi opisi će vam pomoći da bolje razumijete svoje rezultate i kako ih primijeniti u kontekstu
+            vašeg svakodnevnog života.
+        </p>
     </hgroup>
 </header>
 
 <main class="container">
-
     <div id="Anketa">
         <!-- Preview -->
         <h2>Označite u kojoj mjeri se pojedina tvrdnja odnosila na Vas u zadnjih tjedan dana.</h2>
@@ -212,7 +221,7 @@
             <br>
         </div>
         <div Type style="margin:10px">
-            <h4>Ništa me nije moglo oduševiti</h4>
+            <h4>Ništa me nije moglo oduševiti.</h4>
             <div>
                 <button class="rating-btnDepresija" data-value="0">0</button>
                 <button class="rating-btnDepresija" data-value="1">1</button>
@@ -313,7 +322,7 @@
         <!-- Required for hCaptcha -->
     </div>
     <br>
-    <div id="Rezultati" hidden="hidden" >
+    <div id="Rezultati" >
         <H4> Depresija </H4>
         <progress id="DepraBar" value="10" max="21"></progress>
         <p id="DepresijaResults">Rezultati depresije Here</p>
